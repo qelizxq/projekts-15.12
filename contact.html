@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontakti — Skolas Pasākumi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> ... </header>
+  <main class="container" style="padding:28px 0">
+    <h1 style="font-family:'Poppins',sans-serif;color:var(--primary)">Kontakti</h1>
+
+    <section class="card" style="margin-top:12px;display:flex;gap:18px;flex-wrap:wrap">
+      <div style="flex:1;min-width:260px">
+        <h3>Adrese</h3>
+        <p class="meta">Skolas iela 1, Rīga</p>
+        <h3>Tālrunis</h3>
+        <p class="meta">+371 12345678</p>
+      </div>
+
+      <div style="flex:1;min-width:260px">
+        <h3>Sazinies ar mums</h3>
+        <form class="contact-grid" action="#" method="POST">
+          <input name="vards" placeholder="Vārds" required>
+          <input name="email" placeholder="E-pasts" type="email" required>
+          <textarea name="zina" placeholder="Ziņa" rows="5"></textarea>
+          <button class="btn" type="submit">Sūtīt</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer> ... </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

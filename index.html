@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Skolas Pasākumi — Sākumlapa</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <div style="font-weight:700">Skolas Pasākumi</div>
+          <div style="font-size:12px;color:#6B7280">Vienkārši. Droši. Iesaistoši.</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Sākumlapa</a></li>
+          <li><a href="events.html">Pasākumi</a></li>
+          <li><a href="gallery.html">Galerija</a></li>
+          <li><a href="contact.html">Kontakti</a></li>
+          <li><a href="event.html">Par mums</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="left">
+        <h1>Atklāj nākamos skolas pasākumus</h1>
+        <p>Reģistrējies, pievienojies aktivitātēm un skati galerijas — viss vienā vietā.</p>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="cta" href="events.html">Skatīt pasākumus</a>
+          <button id="hero-change" class="btn">Apskatīt maketu</button>
+        </div>
+      </div>
+      <div class="right card" style="width:360px">
+        <img id="hero-img" src="hero.jpg" alt="Hero" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:12px">
+        <h3 style="margin:0 0 6px;font-family:'Poppins',sans-serif;color:var(--primary)">Šodienas izceltais pasākums</h3>
+        <p class="meta">Zinātnes diena — 20. decembris • Skolas zāle</p>
+        <p style="margin:0 0 12px">Pievienojies interaktīvām lekcijām, darbnīcām un radošām aktivitātēm. Vietu skaits ierobežots.</p>
+        <a href="event.html" class="btn">Pieteikties</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="font-family:'Poppins',sans-serif;color:var(--primary)">Populārie pasākumi</h2>
+      <div class="events-grid">
+        <article class="card event-item">
+          <img src="event1.jpg" alt="">
+          <h3>Skolas teātra vakars</h3>
+          <p class="meta">25. janvāris • Teātra zāle</p>
+        </article>
+        <article class="card event-item">
+          <img src="event2.jpg" alt="">
+          <h3>Mākslas darbnīca</h3>
+          <p class="meta">10. februāris • Mākslas klase</p>
+        </article>
+        <article class="card event-item">
+          <img src="gallery1.jpg" alt="">
+          <h3>Sporta diena</h3>
+          <p class="meta">5. marts • Sporta laukums</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2025 Skolas Pasākumi — Izstrādāja: Jelizaveta Ņikitina</div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modal-close" style="float:right;border:none;background:transparent;font-size:22px;cursor:pointer">✕</button>
+      <img id="modal-img" src="" alt="Liels attēls">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

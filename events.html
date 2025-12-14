@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pasākumi — Skolas Pasākumi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header (kopējais) -->
+  <header> ... kopējais header ... </header>
+  <main class="container" style="padding:28px 0">
+    <h1 style="font-family:'Poppins',sans-serif;color:var(--primary)">Pasākumu kalendārs</h1>
+    <section class="card" style="margin-top:16px">
+      <form aria-label="Filtri">
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <input type="date" name="from">
+          <input type="date" name="to">
+          <select name="tema">
+            <option value="">Visas tēmas</option>
+            <option>Zinātne</option><option>Māksla</option><option>Sports</option>
+          </select>
+          <button class="btn" type="submit">Filtrēt</button>
+        </div>
+      </form>
+      <div class="events-grid" style="margin-top:18px">
+        <!-- vairāk pasākumu kartīšu -->
+        <article class="card event-item">
+          <img src="event1.jpg" alt="">
+          <h3>Skolas teātra vakars</h3>
+          <p class="meta">25. janvāris • Teātra zāle</p>
+          <a href="event.html" class="btn" style="margin-top:8px;display:inline-block">Skatīt</a>
+        </article>
+        <!-- ... -->
+      </div>
+    </section>
+  </main>
+  <footer> ... </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
